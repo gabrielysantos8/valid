@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+header {
+    background: #00A279;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-weight: 700;
+}
+
+
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    gap: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
