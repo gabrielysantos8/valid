@@ -1,0 +1,24 @@
+.fundoverde{
+    background-color: #00A279;
+}
+
+.row{
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.col-6{
+    width: 50%;
+}
+
+.text-branco{
+    color: white;
+    font-size: 50px;
+    font-weight: 700;
+    margin: 50px;
+}
+
+.text-subli{
+    text-decoration: underline;
+    font-weight: 700;
+}

@@ -1,0 +1,114 @@
+/* css components */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+}
+
+/* MENU */
+
+header {
+    background: #00A279;
+    padding: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: white;
+    font-weight: 700;
+}
+
+nav ul {
+    display: flex;
+    gap: 50px;
+    list-style: none;
+}
+
+nav ul li {
+    list-style: none;
+}
+
+nav ul li a {
+
+    color: white;
+    text-decoration: none;
+}
+
+.icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+.menu-btn {
+    align-items: center;
+    justify-content: center;
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0;
+}
+
+.menu-btn svg {
+    display: block;
+}
+
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    color: white;
+}
+
+/* RESPONSIVIDADE  */
+
+@media (max-width: 768px) {
+
+    header {
+        padding: 20px;
+    }
+
+    .menu-btn {
+        display: flex;
+    }
+
+    nav {
+        display: none;
+    }
+
+    nav.ativo {
+        display: block;
+        position: absolute;
+        top: 120px;
+        width: 80%;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #00A279;
+        border-radius: 25px;
+        padding: 20px 0;
+    }
+
+    nav.ativo ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .icons {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+    }
+}
