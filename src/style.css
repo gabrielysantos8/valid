@@ -1,5 +1,12 @@
+/* HOME */
+
+/* seção 1 */
+.home{
+    background-color: #D4EDEA;
+}
 .fundoverde{
     background-color: #00A279;
+    padding: 50px;
 }
 
 .row{
@@ -9,16 +16,64 @@
 
 .col-6{
     width: 50%;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
 }
 
 .text-branco{
     color: white;
     font-size: 50px;
     font-weight: 700;
-    margin: 50px;
+    margin-left: 100px;
 }
 
 .text-subli{
     text-decoration: underline;
     font-weight: 700;
+}
+
+.div-imgdoc{
+    background-color: #d9d9d969;
+    border: #d9d9d985 3px solid;
+    border-radius: 40px;
+    width: 60%;
+}
+
+/* seção 2 - cards*/
+.cards-home {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.card-home{
+    background-color: #fff;
+    border-radius: 30px;
+    padding: 40px 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 8px 0 #00a878;
+}
+
+
+.card-home h2{
+    color: #00A279;
+    font-weight: 700;
+}
+
+.icardhome{
+    background-color: #00A279;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: #fff;
+    font-size: 20px;
 }
