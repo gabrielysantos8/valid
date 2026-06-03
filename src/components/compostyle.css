@@ -34,7 +34,6 @@ nav ul li {
 }
 
 nav ul li a {
-
     color: white;
     text-decoration: none;
 }
@@ -71,7 +70,7 @@ nav ul li a {
     color: white;
 }
 
-/* RESPONSIVIDADE  */
+/* RESPONSIVIDADE  MENU */
 
 @media (max-width: 800px) {
 
@@ -110,5 +109,195 @@ nav ul li a {
         display: flex;
         align-items: center;
         gap: 15px;
+    }
+}
+
+
+/* FOOTER */
+
+footer{
+    background:#FFF;
+    padding:100px 0;
+    margin-top: 150px;
+}
+
+.container{
+    width:90%;
+    max-width:1200px;
+    margin:auto;
+}
+
+.footer-content{
+    display:flex;
+    justify-content:space-between;
+    gap:60px;
+}
+
+.footer-left{
+    flex:1;
+}
+
+.footer-left h2{
+    font-size: 32px;
+    margin-bottom:15px;
+    font-weight: 500;
+}
+
+.footer-left h4, span{
+    font-weight: 500;
+}
+
+.links-footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-bottom:15px;
+}
+
+.links-footer a{
+    display: block;
+    font-weight: 500;
+    color:#4E4E4E;
+    margin-bottom: 8px;
+}
+
+.footer-info{
+    margin-top:20px;
+}
+
+.footer-info h4{
+    margin-bottom:5px;
+}
+
+.footer-info span{
+    display:block;
+    margin-bottom:20px;
+}
+
+.acesso-links{
+    margin-top: 20px;
+    margin-bottom: 5px;
+}
+
+.bolinhaverde{
+    background-color: #00A279;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    margin-top: 20px;
+
+}
+hr{
+    border: 1px solid #00A279;
+}
+
+.footer-form{
+    flex:1;
+    background:#00A279;
+    padding:40px;
+    border-radius:20px;
+}
+
+.footer-form h4{
+    color: #ffffff;
+    font-weight: 700;
+    font-size: 38px;
+    margin-bottom: 15px;
+}
+
+.input-group{
+    display:flex;
+    gap:12px;
+    margin-bottom:25px;
+    border-bottom:1px solid #ffffff;
+}
+
+.textarea-group{
+    align-items:flex-start;
+}
+
+.textarea-group {
+    margin-top:12px;
+}
+
+.input-group input,
+.input-group textarea{
+    width:100%;
+    border:none;
+    background:transparent;
+    padding:12px 0;
+    outline:none;
+    color:#ffffff;
+    resize:none;
+}
+
+.icons-form{
+    width:15px;
+    height:15px;
+    padding:12px 0;
+    color: #ffffff;
+}
+
+input::placeholder,
+textarea::placeholder {
+    color: #ffffff;
+}
+
+.footer-form button{
+    width:100px;
+    float: inline-start;
+    border:none;
+    background:#ffffff;
+    color:#00A279;
+    padding:10px;
+    border-radius:30px;
+    cursor:pointer;
+    font-weight:700;
+    transition:.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+
+.footer-form button:hover{
+    opacity:.9;
+}
+
+.icon-btn-form{
+    display: flex;
+    align-items: center;
+}
+
+/* RESPONSIVIDADE FOOTER */
+
+@media (max-width: 768px) {
+
+    footer {
+        padding: 60px 0;
+        margin-top: 80px;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .footer-form {
+        padding: 25px;
+    }
+
+    .footer-form h4 {
+        font-size: 28px;
+    }
+
+    .footer-left h2 {
+        font-size: 28px;
+    }
+
+    .links-footer {
+        grid-template-columns: 1fr;
     }
 }

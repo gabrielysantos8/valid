@@ -1,4 +1,5 @@
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 import "./style.css";
 import documento from "./assets/img/documento.png";
 import { LuFolderGit2 } from "react-icons/lu";
@@ -48,6 +49,8 @@ function Home() {
           </div>
         </div>
       </section>
+
+      <Footer />
 
     </div>
 
