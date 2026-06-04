@@ -44,7 +44,7 @@ function Footer() {
                             </div>
 
                             <div>
-                                <Link to="/">Artigos</Link>
+                                <Link to="/artigos">Artigos</Link>
                                 <Link to="/">Assinaturas</Link>
                             </div>
 

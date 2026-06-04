@@ -20,7 +20,7 @@ function Header() {
                     <li><Link to="/">Home</Link></li>
                     <li><Link to="/">Sobre</Link></li>
                     <li><Link to="/">Analisar com IA</Link></li>
-                    <li><Link to="/">Artigos</Link></li>
+                    <li><Link to="/artigos">Artigos</Link></li>
                     <li><Link to="/">Assinaturas</Link></li>
                 </ul>
             </nav>
