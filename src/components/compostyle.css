@@ -96,6 +96,7 @@ nav ul li a {
         background: #00A279;
         border-radius: 25px;
         padding: 20px 0;
+        border:2px solid #ffffff;
     }
 
     nav.ativo ul {

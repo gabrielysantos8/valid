@@ -28,7 +28,7 @@ function Home() {
         </div>
       </section>
 
-      <section>
+      <section className="container">
         <div className="cards-home">
           <div className="card-home">
             <div className="icardhome"><LuFolderGit2 /></div>
@@ -48,6 +48,12 @@ function Home() {
             <p>qualquer coisa</p>
           </div>
         </div>
+      </section>
+
+      <section className="container como-funciona">
+        <h2>Como funciona?</h2>
+        <p>Processo simples e eficiente em apenas 4 etapas</p>
+
       </section>
 
       <Footer />
