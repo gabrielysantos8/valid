@@ -4,6 +4,7 @@ import "./style.css";
 import documento from "./assets/img/documento.png";
 import livro_artigos from "./assets/img/livro_artigos.svg";
 import { LuFolderGit2 } from "react-icons/lu";
+import { Link } from "react-router-dom";
 
 function Artigos() {
   return (
@@ -35,7 +36,7 @@ function Artigos() {
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
               <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
                 <span className="card_author">Adriano Bendazzoli</span>
               </div>
               <p className="card_titulo_artigos">Como identificar documentos falsos</p>
@@ -44,50 +45,12 @@ function Artigos() {
           </div>
 
 
-          <div className="card_artigos">
-            <div className="card_img_artigos"></div>
-            <div className="card_body_artigos">
-              <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
-                <span className="card_author">Adriano Bendazzoli</span>
-              </div>
-              <p className="card_titulo_artigos">Como identificar documentos falsos</p>
-              <p className="card_desc">Aprenda os principais sinais de falsificação</p>
-            </div>
-          </div>
 
           <div className="card_artigos">
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
               <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
-                <span className="card_author">Adriano Bendazzoli</span>
-              </div>
-              <p className="card_titulo_artigos">Como identificar documentos falsos</p>
-              <p className="card_desc">Aprenda os principais sinais de falsificação</p>
-            </div>
-          </div>
-        </div>
-
-        <div className="cards-home">
-          <div className="card_artigos">
-            <div className="card_img_artigos"></div>
-            <div className="card_body_artigos">
-              <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
-                <span className="card_author">Adriano Bendazzoli</span>
-              </div>
-              <p className="card_titulo_artigos">Como identificar documentos falsos</p>
-              <p className="card_desc">Aprenda os principais sinais de falsificação</p>
-            </div>
-          </div>
-
-
-          <div className="card_artigos">
-            <div className="card_img_artigos"></div>
-            <div className="card_body_artigos">
-              <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
                 <span className="card_author">Adriano Bendazzoli</span>
               </div>
               <p className="card_titulo_artigos">Como identificar documentos falsos</p>
@@ -99,7 +62,7 @@ function Artigos() {
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
               <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
                 <span className="card_author">Adriano Bendazzoli</span>
               </div>
               <p className="card_titulo_artigos">Como identificar documentos falsos</p>
@@ -113,7 +76,7 @@ function Artigos() {
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
               <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
                 <span className="card_author">Adriano Bendazzoli</span>
               </div>
               <p className="card_titulo_artigos">Como identificar documentos falsos</p>
@@ -126,7 +89,7 @@ function Artigos() {
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
               <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
                 <span className="card_author">Adriano Bendazzoli</span>
               </div>
               <p className="card_titulo_artigos">Como identificar documentos falsos</p>
@@ -138,7 +101,46 @@ function Artigos() {
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
               <div className="card_clique">
-                <span className="card_clique_aqui ">Clique Aqui</span>
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
+                <span className="card_author">Adriano Bendazzoli</span>
+              </div>
+              <p className="card_titulo_artigos">Como identificar documentos falsos</p>
+              <p className="card_desc">Aprenda os principais sinais de falsificação</p>
+            </div>
+          </div>
+        </div>
+
+        <div className="cards-home">
+          <div className="card_artigos">
+            <div className="card_img_artigos"></div>
+            <div className="card_body_artigos">
+              <div className="card_clique">
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
+                <span className="card_author">Adriano Bendazzoli</span>
+              </div>
+              <p className="card_titulo_artigos">Como identificar documentos falsos</p>
+              <p className="card_desc">Aprenda os principais sinais de falsificação</p>
+            </div>
+          </div>
+
+
+          <div className="card_artigos">
+            <div className="card_img_artigos"></div>
+            <div className="card_body_artigos">
+              <div className="card_clique">
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
+                <span className="card_author">Adriano Bendazzoli</span>
+              </div>
+              <p className="card_titulo_artigos">Como identificar documentos falsos</p>
+              <p className="card_desc">Aprenda os principais sinais de falsificação</p>
+            </div>
+          </div>
+
+          <div className="card_artigos">
+            <div className="card_img_artigos"></div>
+            <div className="card_body_artigos">
+              <div className="card_clique">
+                <Link to="/artigosConteudo" className="card_clique_aqui ">Clique Aqui</Link>
                 <span className="card_author">Adriano Bendazzoli</span>
               </div>
               <p className="card_titulo_artigos">Como identificar documentos falsos</p>

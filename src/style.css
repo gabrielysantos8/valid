@@ -179,7 +179,7 @@
 
 .imgartigos{
     background-color: none;
-    width: 80%;
+    width: 90%;
 }
 
 
@@ -268,4 +268,63 @@
   .card_img_artigos {
     height: 180px;
   }
+}
+
+/* Conteúdo dos artigos */
+.conteiner_artigo {
+  max-width: 1000px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 32px 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #fff;
+  border-radius: 30px;
+  box-sizing: border-box;
+  margin-top: 80px;
+}
+
+.texto_artigo_conteudo {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.8;
+  margin: 0 0 24px;
+}
+
+.artigo_titulo_conteudo {
+  font-size: 25px;
+  font-weight: 700;
+  color: #1a1a1a;
+  margin: 28px 0 12px;
+}
+
+.artigo_citacao {
+  border-left: 6px solid #00A279;
+  margin: 20px 0;
+  padding: 12px 20px;
+  font-size: 13px;
+  font-style: italic;
+  color: #333;
+  background: #D4EDEA;
+  border-radius: 8px 8px 8px 8px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.conteudo_colorido {
+  background-color: #00A279;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  width: 100%;
+  box-sizing: border-box;
+  color: #fff;
+}
+
+.texto_artigo_conteudo_colorido{
+  font-size: 13px;
+  font-weight: 400;
+  color: #ebf7f5;
+  margin: 18px 0 12px; 
 }
