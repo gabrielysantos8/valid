@@ -252,3 +252,20 @@
   margin: 0;
 }
 
+/* responsividade */
+@media (max-width: 768px) {
+  .card_artigos {
+    flex: 1 1 calc(50% - 10px); 
+  }
+}
+
+@media (max-width: 430px) {
+  .card_artigos {
+    flex: 1 1 100%; 
+    width: 100%;    
+  }
+
+  .card_img_artigos {
+    height: 180px;
+  }
+}
