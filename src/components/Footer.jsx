@@ -39,7 +39,7 @@ function Footer() {
 
                             <div>
                                 <Link to="/">Home</Link>
-                                <Link to="/">Sobre</Link>
+                                <Link to="/sobre">Sobre</Link>
                                 <Link to="/">Analisar com IA</Link>
                             </div>
 

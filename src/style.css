@@ -13,6 +13,7 @@
 .fundoverde{
     background-color: #00A279;
     padding: 80px;
+    padding-bottom: 140px;
 }
 
 .row{
@@ -83,12 +84,14 @@
     }
 }
 
-/* seção 2 - cards*/
+/* seção 2 - cards */
 .cards-home {
     display: flex;
     justify-content: center;
     gap: 40px;
-    margin-top: 80px;
+    margin-top: -70px;
+    position: relative;
+    z-index: 10;
 }
 
 .card-home{
@@ -104,6 +107,10 @@
     box-shadow: 0 8px 0 #00A279;
 }
 
+.card-destaque {
+    transform: translateY(-40px);
+}
+
 
 .card-home h2{
     color: #00A279;
@@ -114,13 +121,13 @@
 .icardhome{
     background-color: #00A279;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     display: flex;
     align-items: center; 
     justify-content: center;
     color: #fff;
-    font-size: 20px;
+    font-size: 25px;
 }
 
 @media (max-width: 992px) {
@@ -132,6 +139,10 @@
 
     .card-home {
         width: calc(50% - 15px);
+    }
+
+    .card-destaque {
+        transform: none;
     }
 }
 
@@ -158,17 +169,319 @@
 }
 
 /* seção 3 - como funciona */
-.como-funciona h2{
-    margin-top: 100px;
+.titulos-home{
+    margin-top: 120px;
     color: #00A279;
     font-weight: 700;
     font-size: 40px;
     text-align: center;
+    word-break: break-word;
 }
 
 .como-funciona p{
     text-align: center;
 }
+
+.cards-home-func{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 50px;
+    position: relative;
+}
+
+.cards-home-func::before {
+    content: "";
+
+    position: absolute;
+
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    height: 10px;
+    background: #00A279;
+
+    transform: translateY(-50%);
+    z-index: 1;
+}
+
+.card-etapas{
+    background-color: #fff;
+    border-radius: 30px;
+    height: 300px;
+    width: 320px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 10px 0 #00A279;
+    position: relative;
+    z-index: 2;
+}
+
+.icardhome2{
+    background-color: #00A279;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+    color: #fff;
+    font-size: 35px;
+}
+
+.card-etapas h3{
+    color: #00A279;
+    font-weight: 700;
+    margin-top: 20px;
+}
+
+.card-etapas p{
+    font-size: 14px;
+}
+
+@media (max-width: 992px) {
+
+    .cards-home-func {
+        flex-wrap: wrap;
+        gap: 30px;
+    }
+
+    .cards-home-func::before {
+        display: none;
+    }
+
+    .card-etapas {
+        width: calc(50% - 15px);
+        max-width: 350px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .titilos-home {
+        font-size: 32px;
+        margin-top: 70px;
+    }
+
+    .cards-home-func {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    .card-etapas {
+        width: 100%;
+        max-width: 400px;
+        height: auto;
+        min-height: 280px;
+    }
+
+    .icardhome2 {
+        width: 70px;
+        height: 70px;
+        font-size: 30px;
+    }
+
+    .card-etapas h3 {
+        font-size: 1.5rem;
+    }
+
+    .card-etapas p {
+        font-size: 0.95rem;
+    }
+
+}
+
+/* seção 4 - funcionalidades */
+.cards-funcionalidades{
+    margin-top: 40px;
+}
+.card-funcionalidades{
+    background-color: #00A279;
+    border-radius: 30px;
+    padding: 15px;
+    color: #fff;
+    box-shadow: 0 10px 0 #fff;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.texto-card-funci{
+    flex: 1;
+}
+
+.card-funcionalidades h2{
+    font-weight: 500;
+}
+
+.card-funcionalidades p{
+    font-size: 18px;
+}
+
+.icon-card-funci{
+    font-size: 40px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 500px){
+
+    .card-funcionalidades{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+    }
+
+    .texto-card-funci{
+        text-align: center;
+    }
+
+    .icon-card-funci{
+        order: -1; 
+        font-size: 45px;
+    }
+
+}
+
+/* seção 5 - público-alvo */
+.publico-alvo{
+    padding-bottom: 120px;
+}
+
+.publico-alvo p{
+    text-align: center;
+}
+
+.fundoverdeclaro{
+    background-color: #B0DDDA;
+    padding-top: 140px;
+    position: relative;
+    padding-bottom: 80px;
+}
+
+.cards-home2 {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    position: relative;
+    z-index: 10;
+    margin-top: -200px;
+}
+
+.cardhome2{
+    width: 390px;
+}
+
+.exemplos-doc{
+    display: flex;
+    gap: 5px; 
+    justify-content: center; 
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.exemplo-doc{
+    background-color: #B0DDDA;
+    color: #00A279;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+
+@media (max-width: 992px) {
+
+    .cards-home2 {
+        flex-wrap: wrap;
+        gap: 30px;
+        margin-top: -150px;
+    }
+
+    .fundoverdeclaro {
+        padding-top: 100px;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .cards-home2 {
+        margin-top: 0; 
+    }
+
+    .fundoverdeclaro {
+        padding-top: 50px;
+    }
+
+    .publico-alvo {
+        padding-bottom: 60px;
+    }
+}
+
+/* seção 6 - verificar 1° doc */
+.secverificardoc{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.secverificardoc h1{
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.125rem);
+    line-height: 1.2;
+}
+
+.secverificardoc p{
+    font-size: clamp(1rem, 2vw, 1.25rem);
+    margin-top: 20px;
+}
+
+.btn-verfi1doc{
+    background-color: #fff;
+    color: #00A279;
+    max-width: 330px;
+    width: 100%;
+    border-radius: 20px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 30px auto 0;
+}
+
+.btn-verfi1doc a{
+    text-align: center;
+    word-break: break-word;
+}
+
+.text-subli2{
+    text-decoration: underline;
+    font-weight: 700;
+    font-size: clamp(2rem, 5vw, 3.125rem);
+    line-height: 1.2;
+    word-break: break-word;
+}
+
+
+
+
 
 /* ______________________________________________________ */
 /* ARTIGOS */
@@ -184,6 +497,17 @@
 
 
 /* section- card artigos */
+.cards-artigos {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 80px;
+}
+
+.artigosmarbottom{
+    margin-bottom: 150px;
+}
+
 .card_artigos {
   width: 400px;
   border-radius: 16px;       
@@ -283,6 +607,7 @@
   border-radius: 30px;
   box-sizing: border-box;
   margin-top: 80px;
+  margin-bottom: 150px;
 }
 
 .texto_artigo_conteudo {
@@ -327,4 +652,120 @@
   font-weight: 400;
   color: #ebf7f5;
   margin: 18px 0 12px; 
+}
+
+/* ________________________________________________________________________________ */
+/* SOBRE */
+
+.sobre{
+    background-color: #fff;
+}
+
+.texto-sobre h1{
+    color: #00A279;
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.card-img-sobre{
+    background-color: #D4EDEA;
+    box-shadow: 0 8px 0 #00A279;
+    border-radius: 30px;
+    width: 60%;
+    transform: rotate(5deg);
+}
+
+.img-sobre{
+    width: 60%;
+    transform: rotate(-5deg);
+}
+
+.section-sobre{
+    margin-top: 100px;
+}
+
+@media (max-width: 820px) {
+
+    .card-img-sobre{
+        margin-top: 30px;
+        transform: none;
+    }
+
+    .img-sobre{
+        transform: none;
+    }
+
+    .texto-col{
+        order: 1;
+    }
+
+    .img-col{
+        order: 2;
+    }
+
+}
+
+/* seção desenvolvedores */
+.marginsecdesen{
+    margin-top: 60px;
+}
+.sec-desenvolvedores{
+    text-align: center;
+    color: #fff;
+}
+
+.sec-desenvolvedores h1{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.divfotos{
+    gap: 30px;
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.div-foto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.div-foto h2{
+    font-weight: 700;
+    margin-top: 10px;
+}
+
+.img-foto-desen{
+    background-color: #D4EDEA;
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+}
+
+@media (max-width: 992px){
+
+    .div-foto{
+        width: calc(50% - 15px);
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .sec-desenvolvedores h1{
+        font-size: 32px;
+    }
+
+    .div-foto{
+        width: 100%;
+    }
+
+    .img-foto-desen{
+        width: 180px;
+        height: 270px;
+    }
+
 }

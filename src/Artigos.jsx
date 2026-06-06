@@ -30,8 +30,8 @@ function Artigos() {
         </div>
       </section>
 
-      <section className="container">
-        <div className="cards-home">
+      <section className="container artigosmarbottom">
+        <div className="cards-artigos">
           <div className="card_artigos">
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
@@ -71,7 +71,7 @@ function Artigos() {
           </div>
         </div>
 
-        <div className="cards-home">
+        <div className="cards-artigos">
           <div className="card_artigos">
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
@@ -110,7 +110,7 @@ function Artigos() {
           </div>
         </div>
 
-        <div className="cards-home">
+        <div className="cards-artigos">
           <div className="card_artigos">
             <div className="card_img_artigos"></div>
             <div className="card_body_artigos">
