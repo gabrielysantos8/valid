@@ -28,7 +28,9 @@ function Header() {
             <div className="actions">
                 <div className="icons">
                     <IoSearch />
-                    <FaRegUser />
+                    <Link to="/perfil">
+                        <FaRegUser />
+                    </Link>
                 </div>
 
                 <button

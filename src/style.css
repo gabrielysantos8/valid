@@ -769,3 +769,165 @@
     }
 
 }
+
+/* Perfil _______________________________________________________________ */
+.card_perfil {
+  background: #00A279;
+  border-radius: 25px;
+  padding: 24px 32px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  overflow: hidden;     
+}
+
+.foto_perfil{
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #fff;
+  overflow: hidden;
+  flex-shrink: 0;        
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  object-fit: cover;  
+}
+
+
+.card_perfil_esquerda {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.perfil_nome {
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  margin: 0 0 4px;
+}
+
+.perfil_email {
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.85); 
+  margin: 0;
+}
+
+.card_perfil_direita {
+  display: flex;
+  flex-direction: column; 
+  gap: 10px;
+}
+
+.btn_perfil {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: transparent;
+  border: 1.5px solid rgba(255, 255, 255, 0.7);
+  border-radius: 20px;
+  padding: 7px 16px;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: 0.2s ease;
+  white-space: nowrap; 
+}
+
+.btn_perfil:hover {
+  background: rgba(255, 255, 255, 0.15); 
+}
+
+@media (max-width: 600px) {
+  .card_perfil {
+    flex-direction: column;  
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .card_perfil_direita {
+    width: 100%;
+  }
+
+  .btn_perfil {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+/*card de status*/
+.cards_informacoes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.card_stat {
+  background: #fff;
+  border-radius: 16px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  transition: transform 0.18s ease;
+}
+
+.card_stat:hover {
+  transform: translateY(-3px);
+}
+
+.card_stat_topo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.card_stat_icone {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #E6F7F3;  
+  display: flex;
+  align-items: center;
+  justify-content: center;     
+}
+
+.card_stat_numero {
+  font-size: 20px;
+  font-weight: 700;
+  color: #00A279;
+  margin: 0 0 2px;
+}
+
+.card_stat_titulo {
+  font-size: 12px;
+  color: #221f1f;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.card_stat_legenda {
+  font-size: 12px;
+  color: #888;
+  margin: 0;
+  padding-top: 12px;
+  border-top: 1px solid #f0f0f0; 
+}
+
+@media (max-width: 768px) {
+  .cards_informacoes {
+    grid-template-columns: repeat(2, 1fr); 
+  }
+}
+
+@media (max-width: 480px) {
+  .cards_informacoes {
+    grid-template-columns: 1fr; 
+  }
+}
