@@ -7,6 +7,7 @@ import Artigos from "./Artigos";
 import ArtigosConteudo from "./ArtigosConteudo";
 import Sobre from "./Sobre";
 import Perfil from "./Perfil";
+import Assinaturas from "./Assinaturas";
 
 function App() {
   return(
@@ -17,6 +18,7 @@ function App() {
         <Route path="/artigosConteudo" element={<ArtigosConteudo />} />
         <Route path="/sobre" element={<Sobre />} />
         <Route path="/perfil" element={<Perfil />} />
+        <Route path="/assinaturas" element={<Assinaturas />} />
       </Routes>
     </BrowserRouter>
   );

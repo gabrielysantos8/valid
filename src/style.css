@@ -931,3 +931,157 @@
     grid-template-columns: 1fr; 
   }
 }
+
+
+
+
+
+/* ___________________________________________________________________________________________________________________________________ */
+/* ASSINATURAS */
+
+/* seção 1 */
+
+/* seção 2 - planos */
+
+/* seção 3 - dúvidas */
+.cards-dividas{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.col-duvidas{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.card-duvida{
+    border: 3px solid #00A279;
+    border-radius: 25px;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    background-color: #fff;
+
+}
+
+.icon-duvidas{
+    background-color: #D4EDEA;
+    color: #00A279;
+    min-width: 80px;
+    height: 80px;
+    font-size: 38px;
+    border-radius: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.p-duvidas{
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 5px;
+}
+
+.card-duvida p{
+    margin: 0;
+    color: #333;
+    line-height: 1.5;
+}
+
+.titulos-home{
+    text-align: center;
+    color: #00A279;
+    font-size: 50px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+
+
+@media screen and (max-width: 992px){
+
+    .cards-dividas{
+        gap: 15px;
+    }
+
+    .icon-duvidas{
+        min-width: 70px;
+        height: 70px;
+        font-size: 32px;
+    }
+
+    .p-duvidas{
+        font-size: 17px;
+    }
+
+    .card-duvida p{
+        font-size: 15px;
+    }
+
+    .titulos-home{
+        font-size: 42px;
+    }
+}
+
+
+@media screen and (max-width: 768px){
+
+    .cards-dividas{
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .col-duvidas{
+        width: 100%;
+    }
+
+    .card-duvida{
+        padding: 15px;
+        gap: 12px;
+    }
+
+    .icon-duvidas{
+        min-width: 65px;
+        height: 65px;
+        font-size: 28px;
+        border-radius: 18px;
+    }
+
+    .p-duvidas{
+        font-size: 16px;
+    }
+
+    .card-duvida p{
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .titulos-home{
+        font-size: 34px;
+        margin-bottom: 25px;
+    }
+}
+
+
+@media screen and (max-width: 480px){
+
+    .card-duvida{
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .icon-duvidas{
+        margin-bottom: 5px;
+    }
+
+    .titulos-home{
+        font-size: 28px;
+    }
+
+    .p-duvidas{
+        font-size: 15px;
+    }
+}

@@ -6,7 +6,7 @@ import { LuFolderGit2 } from "react-icons/lu";
 import { LuDownload } from "react-icons/lu";
 import { LuSquareDashed } from "react-icons/lu";
 import { TbShieldSearch } from "react-icons/tb";
-import { PiClipboardTextBold } from "react-icons/pi";;
+import { PiClipboardTextBold } from "react-icons/pi";
 import { GrAlert } from "react-icons/gr";
 import { LuScanEye } from "react-icons/lu";
 import { CgFileDocument } from "react-icons/cg";
