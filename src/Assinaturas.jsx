@@ -5,53 +5,57 @@ import { MdOutlineSecurity } from "react-icons/md";
 import { LuDownload } from "react-icons/lu";
 import { TbShieldSearch } from "react-icons/tb";
 import { PiClipboardTextBold } from "react-icons/pi";
+import docpalnosass from "./assets/img/planos-assinaturas.png";
 
 function Assinaturas() {
     return(
         <div className="assinaturas">
             <Header />
 
-            <section className="container">
-                <div className="row">
-                    <div className="col-6">
+            {/* seção 1 */}
+            <section className="fundoverdeclaro2">
+                <div className="container row">
+                    <div className="col-assinaturas div-planoassinturas">
 
-                        <div>
-                            <MdOutlineSecurity />
+                        <div className="planos-ass">
+                            <div className="icon-planos-ass"><MdOutlineSecurity /></div>
                             <p>PLANOS E ASSINATURAS</p>
                         </div>
 
-                        <div>
+                        <div className="titulos-planos-ass">
                             <h1>Escolha o plano Ideal para suas necessidades</h1>
                             <p>O Valid oferece planos flexíveis para pessoas, empresas e instituições que buscam mais segurança na validação documental com inteligência artificial.</p>
                         </div>
                         
-                        <div>
-                            <MdOutlineSecurity />
+                        <div className="div-planos-ass">
+                            <div className="icon-planos-ass"><MdOutlineSecurity /></div>
                             <p>Analise rápida e precisa.</p>
                         </div>
 
-                        <div>
-                            <MdOutlineSecurity />
+                        <div className="div-planos-ass">
+                            <div className="icon-planos-ass"><MdOutlineSecurity /></div>
                             <p>Segurança e privacidade garantidas.</p>
                         </div>
 
                     </div>
 
-                    <div className="col-6">
-
+                    <div className="col-assinaturas div-img-planos-ass">
+                        <img src={docpalnosass} alt="" />
                     </div>
                 </div>
             </section>
 
+            {/* seção 2 - planos  */}
             <section className="container">
 
             </section>
 
+            {/* seção 3 - dúvidas */}
             <section className="container">
                 <h1 className="titulos-home">Dúvidas Frequentes</h1>
 
                 <div className="cards-dividas">
-                    <div className="col-duvidas">
+                    <div className="col-assinaturas">
 
                         <div className="card-duvida">
                             <div className="icon-duvidas"><PiClipboardTextBold /></div>
@@ -71,7 +75,7 @@ function Assinaturas() {
 
                     </div>
 
-                    <div className="col-duvidas">
+                    <div className="col-assinaturas">
 
                         <div className="card-duvida">
                             <div className="icon-duvidas"><TbShieldSearch /></div>

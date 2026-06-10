@@ -6,6 +6,7 @@ import { MdAlternateEmail } from "react-icons/md";
 import { BsTelephone } from "react-icons/bs";
 import { LuMessageSquareText } from "react-icons/lu";
 import { LuSendHorizontal } from "react-icons/lu";
+import { MdOutlineSecurity } from "react-icons/md";
 
 function Footer() {
     return(
@@ -16,7 +17,7 @@ function Footer() {
                 <div className="footer-content">
 
                     <div className="footer-left">
-
+                        <div className="icon-footer"><MdOutlineSecurity /></div>
                         <h2>VALID</h2>
 
                         <hr />

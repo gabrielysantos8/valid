@@ -27,13 +27,13 @@ function Home() {
       <section className="fundoverde">
         <div className="row">
 
-          <div className="col-6">
+          <div className="col-6 div-col-home">
             <div className="div-texto">
               <p className="text-branco">Verifique a autenticidade de documentos com <p className="text-subli">Inteligência Artificial</p></p>
             </div>
           </div>
 
-          <div className="col-6">
+          <div className="col-6 div-col-home2">
             <div className="div-imgdoc">
               <img src={documento} alt="Documento" />
             </div>
@@ -190,7 +190,7 @@ function Home() {
       </section>
 
       {/* seção 6 */}
-      <section className="fundoverde secverificardoc">
+      <section className="fundoverde2 secverificardoc">
 
         <h1>Proteja-se contra fraudes documentais com <h1 className="text-subli2">tecnologia de ponta</h1></h1>
         <p>Junte-se a milhares de empresas e usuários que confiam em nossa plataforma para garantir a autenticidade de seus documentos</p>
