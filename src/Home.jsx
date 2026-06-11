@@ -47,20 +47,20 @@ function Home() {
         <div className="cards-home">
           <div className="card-home">
             <div className="icardhome"><LuFolderGit2 /></div>
-            <h2>Não sei oq</h2>
-            <p>qualquer coisa</p>
+            <h2>Planos e Testes</h2>
+            <p>Experimente gratuitamente ou conheça nossos planos mensais e anuais sob medida para sua necessidade.</p>
           </div>
 
           <div className="card-home card-destaque">
             <div className="icardhome"><LuFolderGit2 /></div>
-            <h2>Não sei oq</h2>
-            <p>qualquer coisa</p>
+            <h2>Análise Anti-Fraude</h2>
+            <p>Verifique a integridade e autenticidade dos seus documentos instantaneamente com nossa IA protetora.</p>
           </div>
 
           <div className="card-home">
             <div className="icardhome"><LuFolderGit2 /></div>
-            <h2>Não sei oq</h2>
-            <p>qualquer coisa</p>
+            <h2>Conteúdo & Artigos</h2>
+            <p>Aprenda a identificar documentos falsos e descubra as melhores práticas para evitar fraudes no mercado.</p>
           </div>
         </div>
       </section>

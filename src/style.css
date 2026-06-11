@@ -105,8 +105,8 @@
 .card-home{
     background-color: #fff;
     border-radius: 30px;
-    width: 320px;
-    padding: 40px;
+    width: 400px;
+    padding: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
