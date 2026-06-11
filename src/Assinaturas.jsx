@@ -1,5 +1,6 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import Planos from "./components/Planos";
 import "./style.css";
 import { MdOutlineSecurity } from "react-icons/md";
 import { LuDownload } from "react-icons/lu";
@@ -47,7 +48,7 @@ function Assinaturas() {
 
             {/* seção 2 - planos  */}
             <section className="container">
-
+                <Planos />
             </section>
 
             {/* seção 3 - dúvidas */}
