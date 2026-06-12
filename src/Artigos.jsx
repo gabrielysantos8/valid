@@ -5,6 +5,7 @@ import documento from "./assets/img/documento.png";
 import livro_artigos from "./assets/img/livro_artigos.svg";
 import { LuFolderGit2 } from "react-icons/lu";
 import { Link } from "react-router-dom";
+import BackToTop from "./components/BackToTop";
 
 function Artigos() {
   return (
@@ -152,6 +153,7 @@ function Artigos() {
 
       <Footer />
 
+      <BackToTop />
     </div>
 
   );

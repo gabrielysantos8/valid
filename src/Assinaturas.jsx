@@ -7,6 +7,7 @@ import { LuDownload } from "react-icons/lu";
 import { TbShieldSearch } from "react-icons/tb";
 import { PiClipboardTextBold } from "react-icons/pi";
 import docpalnosass from "./assets/img/planos-assinaturas.png";
+import BackToTop from "./components/BackToTop";
 
 function Assinaturas() {
     return(
@@ -100,6 +101,8 @@ function Assinaturas() {
             </section>
 
             <Footer />
+
+            <BackToTop />
         </div>
     );
 }

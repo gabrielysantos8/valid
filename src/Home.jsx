@@ -16,6 +16,7 @@ import { TbSchool } from "react-icons/tb";
 import { HiOutlinePencilSquare } from "react-icons/hi2";
 import { Link } from "react-router-dom";
 import { FaArrowRight } from "react-icons/fa6";
+import BackToTop from "./components/BackToTop";
 
 function Home() {
   return (
@@ -204,6 +205,7 @@ function Home() {
 
       <Footer />
 
+      <BackToTop />
     </div>
 
   );

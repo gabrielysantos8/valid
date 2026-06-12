@@ -4,6 +4,7 @@ import Footer from "./components/Footer";
 import "./style.css";
 import tcc from "./assets/img/tcc.png";
 import { FiEdit2, FiLock, FiFileText, FiClock, FiShield } from "react-icons/fi";
+import BackToTop from "./components/BackToTop";
 
 function Perfil() {
 
@@ -164,7 +165,8 @@ function Perfil() {
       </section>          
 
       <Footer />
-
+      
+      <BackToTop />
     </div>
   );
 } 

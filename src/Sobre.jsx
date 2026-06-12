@@ -4,6 +4,7 @@ import "./style.css";
 
 import docsobre1 from "./assets/img/doc-sobre-1.png";
 import docsobre2 from "./assets/img/doc-sobre-2.png";
+import BackToTop from "./components/BackToTop";
 
 function Sobre() {
     return (
@@ -91,6 +92,8 @@ function Sobre() {
             </section>
 
             <Footer />
+
+            <BackToTop />
         </div>
     );
 }
