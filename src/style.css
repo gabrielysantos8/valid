@@ -1169,4 +1169,122 @@
     }
 }
 
+/* ANÁLISE COM IA ______________________________________________________________________________________________________________________________________________*/
+.analise{
+    background-color: #D4EDEA;
+}
 
+.secanalise{
+    margin-bottom: 150px;
+}
+
+.row-analise{
+    display: flex;
+    align-items: center;
+    margin-top: 60px;
+    gap: 30px;
+    align-items: stretch;
+}
+
+.titulos-analise{
+    margin-top: 60px;
+    color: #00A279;
+    font-weight: 700;
+    font-size: 40px;
+    text-align: center;
+    word-break: break-word;
+}
+
+.card-analise{
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 35px;
+    width: 70%;
+    box-shadow: 1px 1px 5px #00a2796b;
+}
+
+.upload-area{
+    background-color: #D4EDEA;
+    border-radius: 30px;
+    border: 2px dotted #00A279;
+    padding: 20px;
+    text-align: center;
+}
+
+.icone-download{
+    color: #ffffff;
+    background-color: #00A279;
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+
+.upload-area h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.upload-area p{
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+.btn-upload{
+    background-color: #00A279;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 18px;
+}
+
+.preview-area{
+    text-align: center;
+}
+
+.btn-analisar{
+    background-color: #00A279;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 18px;
+    border: none;
+    font-size: 16px;
+    margin-top: 20px;
+}
+
+.preview-area-img{
+    background-color: #D4EDEA;
+    border-radius: 30px;
+    border: 2px dotted #00A279;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.card-status{
+    background-color: #ffffff;
+    border-radius: 40px;
+    padding: 35px;
+    width: 300px;
+    box-shadow: 1px 1px 5px #00a2796b;
+    height: auto;
+}
+
+.card-status h3{
+    color: #00A279;
+    font-weight: 700;
+    font-size: 24px;
+}
+
+.card-status span{
+    font-weight: 400;
+}
+
+.status-item{
+    margin-top: 8px;
+}
