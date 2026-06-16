@@ -1199,8 +1199,9 @@
     background-color: #ffffff;
     border-radius: 40px;
     padding: 35px;
-    width: 70%;
     box-shadow: 1px 1px 5px #00a2796b;
+    flex: 1;
+    min-width: 0;
 }
 
 .upload-area{
@@ -1228,12 +1229,12 @@
 
 .upload-area h3{
     font-weight: 500;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .upload-area p{
     font-size: 14px;
-    margin-top: 20px;
+    margin-top: 15px;
 }
 
 .btn-upload{
@@ -1241,13 +1242,16 @@
     color: #ffffff;
     padding: 10px;
     border-radius: 18px;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .preview-area{
     text-align: center;
 }
 
-.btn-analisar{
+.btn-acao{
     background-color: #00A279;
     color: #ffffff;
     padding: 10px;
@@ -1265,6 +1269,11 @@
     text-align: center;
 }
 
+.preview-area-img img {
+    margin-left: auto;
+    margin-right: auto;
+    height: 300px;
+}
 
 .card-status{
     background-color: #ffffff;
@@ -1273,6 +1282,7 @@
     width: 300px;
     box-shadow: 1px 1px 5px #00a2796b;
     height: auto;
+    flex-shrink: 0;
 }
 
 .card-status h3{
@@ -1287,4 +1297,185 @@
 
 .status-item{
     margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.status-circle{
+    width: 20px;
+    height: 20px;
+    border: 2px solid #00A279;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+    font-size: 14px;
+}
+
+.status-circle.concluido{
+    background-color: #00A279;
+}
+
+.drag-ativo{
+    background-color: #00a27993;
+}
+
+.resultado-area{
+    text-align: center;
+}
+
+.icone-resultado{
+    font-size: 60px;
+    color: #00A279;
+    display: flex;
+    justify-content: center;
+}
+
+.resultado-area h2{
+    color: #00A279;
+    font-weight: 700;
+    font-size: 34px;
+}
+
+.btn-fechar-rel{
+    float: right;
+}
+
+@media (max-width: 992px){
+
+    .row-analise{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-analise{
+        width: 100%;
+    }
+
+    .card-status{
+        width: 100%;
+        max-width: 600px;
+    }
+
+    .preview-area-img img{
+        max-width: 100%;
+        height: auto;
+    }
+
+}
+
+@media (max-width: 768px){
+
+    .secanalise{
+        margin-bottom: 80px;
+    }
+
+    .titulos-analise{
+        font-size: 32px;
+        padding: 0 15px;
+    }
+
+    .row-analise{
+        margin-top: 40px;
+        gap: 20px;
+    }
+
+    .card-analise,
+    .card-status{
+        width: 100%;
+    }
+
+    .upload-area h3{
+        font-size: 18px;
+    }
+
+    .preview-area-img img{
+        width: 100%;
+        max-height: 250px;
+        object-fit: contain;
+    }
+
+    .icone-resultado{
+        font-size: 50px;
+    }
+
+    .resultado-area h2{
+        font-size: 28px;
+    }
+
+    .resultado-area p{
+        font-size: 15px;
+    }
+
+    .card-status h3{
+        font-size: 22px;
+    }
+
+    .status-item{
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 480px){
+
+    .titulos-analise{
+        font-size: 26px;
+    }
+
+    .card-analise,
+    .card-status{
+        width: 100%;
+        padding: 20px;
+        border-radius: 25px;
+    }
+
+    .upload-area,
+    .preview-area-img{
+        padding: 15px;
+        border-radius: 20px;
+    }
+
+    .upload-area h3{
+        font-size: 16px;
+    }
+
+    .btn-upload,
+    .btn-acao{
+        font-size: 14px;
+        padding: 10px 15px;
+        width: 100%;
+    }
+
+    .acoes-relatorio{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .btn-fechar-rel{
+        float: none;
+    }
+
+    .resultado-area h2{
+        font-size: 24px;
+    }
+
+    .icone-resultado{
+        font-size: 42px;
+    }
+
+    .card-status h3{
+        font-size: 20px;
+    }
+
+    .status-item span{
+        font-size: 13px;
+    }
+
+    .preview-area-img img{
+        max-height: 180px;
+    }
+
 }
