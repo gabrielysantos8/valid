@@ -1,10 +1,8 @@
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import { Link } from "react-router-dom";
 import "./style.css";
-import documento from "./assets/img/documento.png";
-import livro_artigos from "./assets/img/livro_artigos.svg";
 import artigo_conteudo from"./assets/img/artigoConteudo.svg";
-import { LuFolderGit2 } from "react-icons/lu";
 import BackToTop from "./components/BackToTop";
 
 function ArtigosConteudo() {
@@ -77,6 +75,10 @@ function ArtigosConteudo() {
               more-or-less normal distribution of letters, as opposed to using 'Content here, content 
               here', making it look like readable English.
               </p>
+            </div>
+
+            <div>
+              <Link to="/artigos" className="btn-voltar"> ☚ Voltar</Link>
             </div>
 
           </div>

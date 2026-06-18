@@ -664,8 +664,27 @@
   font-size: 13px;
   font-weight: 400;
   color: #ebf7f5;
-  margin: 18px 0 12px; 
+  margin: 18px 0 20px; 
 }
+
+.btn-voltar{
+    width: 100%;
+    border-radius:12px;
+    color: #00A279;
+    border: 2px solid #00A279;
+    padding: 8px 20px 8px 20px;
+    margin-top: 20px !important;
+    font-size: 19px;
+    text-align: center;
+    transition: transform 0.18s ease;
+
+
+}
+
+.btn-voltar:hover{
+    transform: translateY(-4px);
+}
+
 
 /* ________________________________________________________________________________ */
 /* SOBRE */
