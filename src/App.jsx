@@ -9,6 +9,7 @@ import Sobre from "./Sobre";
 import Perfil from "./Perfil";
 import Assinaturas from "./Assinaturas";
 import Analise from "./Analise";
+import EditarPerfil from "./EditarPerfil";
 
 function App() {
   return(
@@ -21,6 +22,7 @@ function App() {
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/assinaturas" element={<Assinaturas />} />
         <Route path="/analise" element={<Analise />} />
+        <Route path="/editarPerfil" element={<EditarPerfil />} />
       </Routes>
     </BrowserRouter>
   );

@@ -39,13 +39,19 @@ function Perfil() {
     //     setLoading(false);    // terminou de carregar (mesmo com erro)
     //   });
 
-    setUsuario({
-      nome: "Fulano da Silva",
-      email: "fulano.silva@gmail.com",
-      telefone: "+55 11 99999-9999",
-      dataCadastro: "01/01/2026",
-      fotoUrl: null // vai usar a imagem tcc como fallback
-    });
+   const usuarioSalvo = localStorage.getItem("usuario");
+
+    if (usuarioSalvo) {
+      setUsuario(JSON.parse(usuarioSalvo));
+    } else {
+      setUsuario({
+        nome: "Fulano da Silva",
+        email: "fulano.silva@gmail.com",
+        telefone: "+55 11 99999-9999",
+        dataCadastro: "01/01/2026",
+        fotoUrl: null
+      });
+    }
 
     setHistorico([
       {
@@ -116,6 +122,8 @@ function Perfil() {
     console.log("Abrir análise:", id);
   }
 
+  
+
 
 
   return (
@@ -145,14 +153,14 @@ function Perfil() {
           </div>
 
           <div className="card_perfil_direita">
-            <button className="btn_perfil" onClick={handleEditarPerfil}>
+            <Link to="/editarPerfil" className="btn_perfil" onClick={handleEditarPerfil}>
               <FiEdit2 size={14} />
               Editar perfil
-            </button>
-            <button className="btn_perfil" onClick={handleTrocarSenha}>
+            </Link>
+            <Link to="/" className="btn_perfil" onClick={handleTrocarSenha}>
               <FiLock size={14} />
               Trocar senha
-            </button>
+            </Link>
           </div>
 
         </div>
@@ -256,7 +264,7 @@ function Perfil() {
             <div  className="card_info_direita">
                <img src={livro_artigos} alt="livro_artigos" className="img_info" />    
 
-              <Link to="/" className="btn_perfil_info" onClick={handleEditarPerfil}>
+              <Link to="/editarPerfil" className="btn_perfil_info" onClick={handleEditarPerfil}>
                   <FiEdit2 size={20} />
                   Editar Informações
               </Link>
