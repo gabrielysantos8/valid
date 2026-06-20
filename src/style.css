@@ -676,13 +676,13 @@
     margin-top: 20px !important;
     font-size: 19px;
     text-align: center;
-    transition: transform 0.18s ease;
+    transition: transform 0.20s ease !important;
 
 
 }
 
 .btn-voltar:hover{
-    transform: translateY(-4px);
+    transform: translateY(-4px) !important;
 }
 
 
@@ -877,9 +877,20 @@
 
 @media (max-width: 600px) {
   .card_perfil {
-    flex-direction: column;  
-    align-items: flex-start;
-    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 15px;
+  }
+
+  .card_perfil_esquerda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card_perfil_info {
+    margin-top: 10px;
   }
 
   .card_perfil_direita {
@@ -924,7 +935,7 @@
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: #E6F7F3;  
+  background: #00A279;  
   display: flex;
   align-items: center;
   justify-content: center;     
@@ -965,8 +976,659 @@
 }
 
 
+/* editar informações do perfil e trocar senha */
+.informacoes_perfil{
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.cards_dados_perfil{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    align-items: stretch;
+}
+
+/* informaçoes */
+.card_info {
+   background: #fff;
+   border-radius: 20px;
+   padding: 28px 30px;
+   display: flex;
+   flex-direction: column;
+   flex: 3;
+   min-width: 320px;
+}
+
+.card_info_topo {
+  display: flex;        
+  align-items: center;   
+  gap: 10px;              
+  margin-bottom: 22px;    
+}
+
+.card_info_topo h2 {
+  color: #00A279;  
+  font-size: 1.20rem; 
+  margin: 0;           
+}
+
+.img_info{
+    width: 280px;
+    height: auto;
+    margin-top: 0;
+}
+
+.card_info_conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 40px;
+  margin-bottom: 25px;                   
+}
+
+.card_info_esquerda{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_info_direita{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn_perfil_info{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 18px;
+  border: 1px solid #00A279;
+  border-radius: 50px;
+  text-decoration: none;
+  color: #00A279;
+}
+
+.btn_perfil_info:hover {
+  background: #00a27911; 
+}
+
+.info_item {
+  display: flex;           
+  flex-direction: column;   
+  gap: 4px;                  
+}
+
+.info_texto {
+  font-size: 0.8rem; 
+  color: #7c8a85;    
+}
+
+.info_valor {
+  font-size: 0.95rem;  
+  font-weight: 600;    
+}
+
+/* parte da segurança */
+
+.card_seguranca {
+  background: #fff;                             
+  border-radius: 22px;                          
+  padding: 28px 30px;                           
+  flex: 1;      
+}
+
+.card_dados_topo {
+  display: flex;        
+  align-items: center;  
+  gap: 10px;              
+  margin-bottom: 22px;  
+}
+
+.card_dados_topo h2 {
+  color: #00A279;  
+  font-size: 1.20rem; 
+  margin: 0;          
+}
+
+.item_seguranca {
+  width: 100%;                        
+  background: none;                                            
+  text-align: left;                     
+  padding: 16px 4px;                      
+  cursor: pointer;                           
+  display: flex;                             
+  flex-direction: column;                      
+  gap: 4px;                                     
+  text-decoration: none;                        
+}
 
 
+.item_seguranca_titulo {
+  font-weight: 600;    
+  font-size: 0.95rem;   
+  color: #1a2b25;   
+
+}
+
+.item_seguranca_desc {
+  font-size: 0.82rem;  
+  color: #7c8a85;    
+}
+
+
+
+@media (max-width: 992px) {
+
+    .cards_dados_perfil {
+        flex-direction: column;
+    }
+
+    .card_info,
+    .card_seguranca {
+        width: 100%;
+    }
+
+    .card_info_conteudo {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .info_grid {
+        width: 100%;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .img_info {
+        width: 140px;
+        height: auto;
+        margin-top: 0;
+    }
+
+    .btn_perfil_info {
+        margin: 0 auto;
+    }
+
+    .item_seguranca_desc {
+        text-align: center;
+        justify-content: center;
+    }
+
+    .item_seguranca_titulo {
+        text-align: center;
+        justify-content: center;     
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .informacoes_perfil {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .card_info,
+    .card_seguranca {
+        padding: 20px;
+        min-width: unset;
+    }
+
+    .card_info_topo,
+    .card_dados_topo {
+        justify-content: center;
+        text-align: center;
+    }
+
+    .info_grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+
+    .img_info {
+        width: 120px;
+    }
+
+    .btn_perfil_info {
+        width: 100%;
+        justify-content: center;
+        margin: 0;
+    }
+
+    .item_seguranca {
+        padding: 14px 0;
+    }
+
+    .item_seguranca_titulo {
+        text-align: center;
+        justify-content: center;     
+    }
+
+    .item_seguranca_desc {
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+
+@media (max-width: 480px) {
+
+    .card_info,
+    .card_seguranca {
+        padding: 16px;
+        border-radius: 16px;
+    }
+
+    .card_info_topo h2,
+    .card_dados_topo h2 {
+        font-size: 1rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .info_texto {
+        font-size: 0.75rem;
+    }
+
+    .info_valor {
+        font-size: 0.9rem;
+    }
+
+    .item_seguranca_titulo {
+        font-size: 0.9rem;
+        text-align: center;
+        justify-content: center;     
+    }
+
+    .item_seguranca_desc {
+        font-size: 0.75rem;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .img_info {
+        width: 90px;
+    }
+}
+
+/* parte das assinaturas e notificações */
+.plano_notificacoes{
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.cards_plano{
+  display: flex;
+  gap: 20px;
+   flex-wrap: wrap;
+}
+
+.card_plano{
+  flex: 3;
+  min-width: 320px;
+  background: #00A279;
+  color: #fff;
+  border-radius: 20px;
+  padding: 24px 28px;
+}
+
+.card_plano_topo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.card_plano_topo h2{
+  margin: 0;
+  font-size: 1.4rem;
+  font-weight: 500;
+}
+
+.card_plano_conteudo{
+  display: flex;
+  justify-content: space-between;
+}
+
+.plano_info h3{
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.plano_info p{
+  max-width: 320px;
+  margin-bottom: 25px;
+  font-size: large;
+}
+
+.plano_beneficios{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.btn_upgrade{
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 12px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  font-size: medium;
+}
+
+.card_notificacoes{
+  flex: 1;
+  min-width: 250px;
+  background: #00A279;
+  color: #fff;
+  border-radius: 20px;
+  padding: 24px 28px;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.notificacao_info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.notificacao_info h4{
+  margin: 0 0 5px;
+}
+
+.notificacao_info p{
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.img_notificacao{
+  width: 400px;
+  align-self: center;
+  margin-top: auto;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.switch_bolinha {
+  position: relative;
+  display: inline-block;
+  width: 46px;
+  height: 24px;
+}
+
+.switch_bolinha input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.not_ligada {
+  position: absolute;
+  cursor: pointer;
+  inset: 0; 
+  background-color: rgba(255,255,255,0.35);
+  border-radius: 50px;
+  transition: .3s;
+}
+
+.not_ligada::before {
+  content: "";
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  left: 3px;
+  top: 3px;
+  background: white;
+  border-radius: 50%;
+  transition: .3s;
+}
+
+.switch_bolinha input:checked + .not_ligada {
+  background-color: #ffffff80;
+}
+
+.switch_bolinha input:checked + .not_ligada::before {
+  transform: translateX(17px);
+}
+
+@media (max-width: 768px) {
+  .cards_plano {
+    flex-direction: column;
+  }
+
+  .card_plano,
+  .card_notificacoes {
+    min-width: 100%;
+    justify-content: center;
+  }
+
+  .card_plano_conteudo {
+    gap: 30px;
+  }
+
+  .plano_info p {
+    max-width: 100%;
+  }
+
+    .img_notificacao {
+    width: 200px;
+    display: block;
+    margin: 20px auto 0;
+  }
+  
+}
+
+@media (max-width: 600px) {
+  .card_plano,
+  .card_notificacoes {
+    padding: 20px;
+    min-width: unset;
+    justify-content: center;
+  }
+
+  .card_plano_topo {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .card_plano_topo h2 {
+    font-size: 1.2rem;
+  }
+
+  .card_plano_conteudo {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .plano_info h3 {
+    font-size: 1.6rem;
+  }
+
+  .plano_info p {
+    font-size: 1rem;
+    max-width: 100%;
+    margin-inline: auto;
+  }
+
+  .plano_beneficios {
+    align-items: center;
+  }
+
+  .btn_upgrade {
+    width: 100%;
+  }
+
+  .card_notificacoes {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img_notificacao {
+    width: 200px;
+    margin-top: 20px;
+    align-self: center !important;
+  }
+}
+
+
+/* hitórico de analises */
+.historico_analises{
+ margin-top: 30px;
+ margin-bottom: 40px;
+}
+
+.card_historico{
+  background: #fff;
+  border-radius: 20px;
+  padding: 25px 30px;
+}
+
+.historico_topo{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.historico_titulo{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #00A279;
+}
+
+.historico_titulo h2{
+  margin: 0;
+}
+
+.historico_ver_todas{
+  color: #00A279;
+  text-decoration: none;
+}
+
+.historico_cabecalho{
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1fr 1.5fr;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+.historico_item{
+  display: grid;
+  grid-template-columns: 3fr 1.5fr 1fr 1.5fr;
+  align-items: center;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.historico_documento{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.historico_documento p{
+  margin: 0;
+}
+
+.historico_documento span{
+  color: #777;
+  font-size: .85rem;
+}
+
+.historico_data p{
+  margin: 0;
+}
+
+.historico_data span{
+  font-size: .85rem;
+  color: #777;
+}
+
+.status_autentico{
+  width: fit-content;
+  background: #d7f0e9;
+  color: #00A279;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.status_suspeito{
+  width: fit-content;
+  background: #ffe68b;
+  color: #9f7d00;
+  padding: 6px 12px;
+  border-radius: 30px;
+  font-size: .8rem;
+  font-weight: 600;
+}
+
+.btn_historico{
+  width: fit-content;
+  border: 1px solid #00A279;
+  border-radius: 8px;
+  padding: 8px 15px;
+  background: transparent;
+  color: #00A279;
+  cursor: pointer;
+}
+
+.btn_carregar{
+  display: block;
+  margin: 25px auto 0;
+  border: none;
+  background: none;
+  color: #00A279;
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+/* Resposividade */
+
+@media (max-width: 768px){
+
+    .historico_cabecalho{
+      display: none;
+    }
+
+    .historico_item{
+      grid-template-columns: 1fr;
+      gap: 15px;
+      text-align: center;
+    }
+
+    .historico_documento{
+      justify-content: center;
+    }
+
+    .status_autentico,
+    .status_suspeito,
+    .btn_historico{
+     margin: 0 auto;
+    }
+
+    .historico_topo{
+      flex-direction: column;
+      gap: 10px;
+    }
+}
 
 /* ___________________________________________________________________________________________________________________________________ */
 /* ASSINATURAS */

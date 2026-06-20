@@ -3,8 +3,11 @@ import Header from "./components/Header";
 import Footer from "./components/Footer";
 import "./style.css";
 import tcc from "./assets/img/tcc.png";
-import { FiEdit2, FiLock, FiFileText, FiClock, FiShield } from "react-icons/fi";
+import livro_artigos from "./assets/img/livro_artigos.svg";
+import perfil_not from "./assets/img/perfil_not.svg";
+import { FiEdit2, FiLock, FiFileText, FiClock, FiShield, FiUser, FiStar,  FiBell  } from "react-icons/fi";
 import BackToTop from "./components/BackToTop";
+import { Link } from "react-router-dom";
 
 function Perfil() {
 
@@ -13,6 +16,7 @@ function Perfil() {
   const [loading, setLoading] = useState(true); // quando estiver carregando
   const [erro, setErro]       = useState(null); // caso tenha erro
   const [stats, setStats] = useState({ documentos: 25, ultimaHora: "Hoje, 12:45", ultimoArquivo: "Documento.pdf", taxa: "98,6%"});
+  const [historico, setHistorico] = useState([]);
 
   // quando abrir
   useEffect(() => { //BACK BACK BACK
@@ -38,8 +42,45 @@ function Perfil() {
     setUsuario({
       nome: "Fulano da Silva",
       email: "fulano.silva@gmail.com",
+      telefone: "+55 11 99999-9999",
+      dataCadastro: "01/01/2026",
       fotoUrl: null // vai usar a imagem tcc como fallback
     });
+
+    setHistorico([
+      {
+        id: 1,
+        nome: "Diploma_universidade.pdf",
+        tamanho: "2,4 MB",
+        data: "02/02/2026",
+        hora: "09:10",
+        status: "autentico"
+      },
+      {
+        id: 2,
+        nome: "Certificado_curso.pdf",
+        tamanho: "1,1 MB",
+        data: "03/03/2026",
+        hora: "10:09",
+        status: "autentico"
+      },
+      {
+        id: 3,
+        nome: "Rg_frente.pdf",
+        tamanho: "1,8 MB",
+        data: "04/04/2026",
+        hora: "12:37",
+        status: "suspeito"
+      },
+      {
+        id: 4,
+        nome: "Historico_escolar.pdf",
+        tamanho: "2,2 MB",
+        data: "05/05/2026",
+        hora: "14:23",
+        status: "autentico"
+      }
+  ]);
     setLoading(false);
 
   }, []); 
@@ -71,12 +112,19 @@ function Perfil() {
     console.log("Trocar senha clicado");
   }
 
+  function handleVerDetalhes(id) {
+    console.log("Abrir análise:", id);
+  }
+
+
+
   return (
     <div className="home">
 
       <Header />
 
-      <section className="perfil"> {/*CARD PERFIL */}
+      {/*CARD PERFIL */}
+      <section className="perfil"> 
         <div className="card_perfil container">
 
           <div className="card_perfil_esquerda">
@@ -110,6 +158,7 @@ function Perfil() {
         </div>
       </section>
 
+    {/* CARD DOS STATUS */}
       <section className="cards_info_perfil container">
         <div className="cards_informacoes">
 
@@ -117,7 +166,7 @@ function Perfil() {
           <div className="card_stat">
             <div className="card_stat_topo">
               <div className="card_stat_icone">
-                <FiFileText size={22} color="#00A279" />
+                <FiFileText size={22} color="#fff" />
               </div>
 
               <div>
@@ -134,7 +183,7 @@ function Perfil() {
           <div className="card_stat">
             <div className="card_stat_topo">
               <div className="card_stat_icone">
-                <FiClock size={22} color="#00A279" />
+                <FiClock size={22} color="#fff" />
               </div>
               <div>
                 {/* virá da API: stats.ultimaHora */}
@@ -150,7 +199,7 @@ function Perfil() {
           <div className="card_stat">
             <div className="card_stat_topo">
               <div className="card_stat_icone">
-                <FiShield size={22} color="#00A279" />
+                <FiShield size={22} color="#fff" />
               </div>
               <div>
                 {/* virá da API: stats.taxa */}
@@ -162,7 +211,199 @@ function Perfil() {
           </div>
 
         </div>
-      </section>          
+      </section>  
+      
+    {/* CARD DE EDIÇÃO DAS INFORMAÇÕES */}
+    <section className="informacoes_perfil container">
+      <div className="cards_dados_perfil">
+
+        <div className="card_info">
+           <div className="card_info_topo">
+              <div className="card_dados_icone">
+                <FiUser size={20} color="#00A279" /> 
+              </div>
+              <h2>Informações pessoais</h2>
+               
+           </div>  
+        
+          <div className="card_info_conteudo">
+            <div className="card_info_esquerda">
+              <div className="info_grid">
+                <div className="info_item"> 
+                    <span className="info_texto">Nome completo</span> 
+                    <span className="info_valor">{usuario.nome}</span> 
+                </div>
+
+                  <div className="info_item"> 
+                    <span className="info_texto">Email</span> 
+                    <span className="info_valor">{usuario.email}</span> 
+                </div>
+
+                  <div className="info_item"> 
+                    <span className="info_texto">Telefone</span> 
+                    <span className="info_valor">{usuario.telefone}</span> 
+                </div>
+
+                  <div className="info_item"> 
+                    <span className="info_texto">Data de Cadastro</span> 
+                    <span className="info_valor">{usuario.dataCadastro}</span> 
+                </div>
+              </div>    
+
+              
+            </div>      
+
+            <div  className="card_info_direita">
+               <img src={livro_artigos} alt="livro_artigos" className="img_info" />    
+
+              <Link to="/" className="btn_perfil_info" onClick={handleEditarPerfil}>
+                  <FiEdit2 size={20} />
+                  Editar Informações
+              </Link>
+            </div>
+           
+          </div>
+         
+         </div>   
+         
+          <div className="card_dados card_seguranca">
+              <div className="card_dados_topo">
+                <div className="card_dados_icone card_dados_icone_cheio"> 
+                  <FiShield size={20} color="#00A279" /> 
+                </div>
+                <h2>Segurança</h2>
+              </div>
+
+              <Link to="/"  className="item_seguranca" onClick={handleTrocarSenha}>
+                  <span className="item_seguranca_titulo">Alterar senha</span> 
+                  <span className="item_seguranca_desc">Atualize sua senha de acesso</span> 
+              </Link>
+
+              <Link to="/"  className="item_seguranca">
+                  <span className="item_seguranca_titulo">Verificação em duas etapas</span> 
+                  <span className="item_seguranca_desc">Aumente a segurança da conta</span> 
+              </Link>
+          </div>     
+      </div>
+
+    </section>
+
+    {/* CARD PLANOS E NOTIFICAÇÕES  */}
+    <section className="plano_notificacoes container">
+      <div className="cards_plano">
+
+        <div className="card_plano">
+
+          <div className="card_plano_topo">
+            <FiStar size={18} />
+            <h2>Plano atual</h2>
+          </div>
+
+          <div className="card_plano_conteudo">
+            <div className="plano_info">
+              <h3>Plano Pro</h3>
+              <p> Aproveite todos os benefícios exclusivos </p>
+
+              <Link to="/assinaturas" className="btn_upgrade">
+                  Fazer upgrade
+              </Link>
+            </div>
+
+            <div className="plano_beneficios">
+              <span>✓ Análises ilimitadas</span>
+              <span>✓ Relatórios completos</span>
+              <span>✓ Suporte prioritário</span>
+              <span>✓ Histórico avançado</span>
+            </div>
+           </div>
+
+        </div>
+     {/* notificações */}
+        <div className="card_notificacoes">
+
+          <div className="card_plano_topo">
+            <FiBell size={18} />
+            <h2>Notificações</h2>
+          </div>
+
+          <div className="notificacao_info">
+            <div>
+              <h4>Receber emails</h4>
+              <p> Receba notificação de suas análises </p>
+            </div>
+
+           <label className="switch_bolinha">
+              <input type="checkbox" />
+              <span className="not_ligada"></span>
+            </label>   
+          </div>
+          
+          <img src={perfil_not} alt="livro_artigos" className="img_notificacao " />
+        </div>
+      </div>
+    </section>
+
+    {/* historico de analises */}
+    <section className="historico_analises container">
+      <div className="card_historico">
+        <div className="historico_topo">
+          <div className="historico_titulo">
+            <FiClock size={22} />
+            <h2>Histórico de análises</h2>
+          </div>
+
+          <Link to="/" className="historico_ver_todas">
+            Ver todas
+          </Link>
+        </div>
+
+        <div className="historico_cabecalho">
+          <span>Documento</span>
+          <span>Data</span>
+          <span>Status</span>
+          <span>Ações</span>
+        </div>
+
+        {historico.map((arquivo) => (
+
+          <div className="historico_item" key={arquivo.id}>
+            <div className="historico_documento">
+              <FiFileText size={22} />
+
+              <div>
+                <p>{arquivo.nome}</p>
+                <span>PDF - {arquivo.tamanho}</span>
+              </div>
+
+            </div>
+
+            <div className="historico_data">
+              <p>{arquivo.data}</p>
+              <span>{arquivo.hora}</span>
+            </div>
+
+            <div className={arquivo.status === "autentico"? "status_autentico" : "status_suspeito"}>
+              {arquivo.status === "autentico" ? "Autêntico" : "Suspeito"}
+            </div>
+
+            <button className="btn_historico" onClick={() => handleVerDetalhes(arquivo.id)}>
+              Ver detalhes
+            </button>
+
+          </div>
+
+        ))}
+
+        <button className="btn_carregar">
+          Carregar mais
+        </button>
+
+      </div>
+
+    </section>
+
+
+
 
       <Footer />
       
