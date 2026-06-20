@@ -2336,3 +2336,409 @@
     }
 
 }
+
+/* CRIAR CONTA - LOGIN - ESQUECEU SENHA/TROCA DE SENHA */
+/* __________________________________________________________________________________________________ */
+
+.textobranco {
+  color: #EDE7DB;
+}
+.textoazul {
+  color: #00A279;
+}
+
+.img_logo_temp{
+  width: 400px;
+  align-self: center;
+  margin-top: 40px;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login-row {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.login-left,
+.login-right {
+  flex: 1;
+  min-width: 0;
+}
+
+.login-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.container-fluid {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.row {
+  display: flex;
+  min-height: 100vh;
+}
+
+.entrar {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 120px;
+  background: #ffffff;
+}
+
+.criarconta {
+  background-color: #00A279;
+  border-top-left-radius: 50px;
+  border-bottom-left-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 120px;
+  position: relative;
+}
+
+.divazul,
+.divbranca {
+  height: 100vh;
+}
+
+.input {
+  border: none;
+  border-bottom: 2px solid #00A279;
+  outline: none;
+  height: 45px;
+  width: 100%;
+  background: transparent;
+  color: #1a2b25;
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+}
+
+.divemail, .divsenha {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 25px;
+  margin-bottom: 8px;
+}
+
+
+.esqueceusenha {
+  padding-top: 15px;
+  padding-bottom: 25px;
+  text-align: left;
+}
+
+.esqueceusenha a {
+  font-size: 14px;
+  text-decoration: underline;
+}
+
+
+.btn {
+  all: unset;
+}
+
+.btnentrar {
+  background-color: #00A279;
+  color: #EDE7DB;
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+
+.btngoogle {
+  background-color: #B0DDDA;
+  color: #00A279;
+  width: 100%;
+  height: 45px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: none;
+  font-size: 15px;
+  margin-top: 10px;
+}
+
+.btnentrar:hover {
+  opacity: 0.9;
+  transition: 0.3s;
+}
+
+.btnbranco {
+  border: 1.5px solid #EDE7DB;
+  color: #EDE7DB;
+  width: 500px;
+  height: 45px;
+  padding: 10px;
+  border-radius: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  margin-top: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btnbranco:hover {
+  background-color: #EDE7DB;
+  color: #00A279;
+  transition: 0.4s;
+}
+
+.textoleft {
+  text-align: left;
+  padding-bottom: 30px;
+}
+
+.imglogologin {
+  width: 180px;
+  margin: 80px auto 0;
+  display: block;
+  transform: rotate(-20deg);
+}
+
+.img_notificacao {
+  width: 220px;
+  position: absolute;
+  bottom: 40px;
+  right: 40px;
+}
+
+
+.perfil-toggle {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+  padding: 30px 0 50px;
+}
+
+.btn-outline-custom {
+  border: 1.5px solid #00A279;
+  color: #00A279;
+  font-weight: 600;
+  border-radius: 10px;
+  padding: 8px 24px;
+  width: 300px;
+  text-align: center;
+  transition: 0.2s;
+}
+
+.btn-outline-custom:hover {
+  background-color: #00A279;
+  color: #EDE7DB;
+}
+
+.descricao-cadastro{
+  color: #333;
+  margin-top: 10px;
+  margin-bottom: 25px;
+  max-width: 400px;
+  line-height: 1.5;
+}
+
+.titulo-login{
+  margin-bottom: 10px;
+}
+
+.titulo-cadastro{
+  margin-bottom: 20px;
+}
+
+.btngoogle{
+  margin-bottom: 15px;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.btnentrar{
+  text-decoration: none;
+}
+
+/* responsividade*/
+
+@media (max-width: 1200px) {
+
+  .entrar,
+  .criarconta {
+    padding: 80px;
+  }
+
+  .btnbranco {
+    width: 100%;
+    max-width: 400px;
+    justify-content: center;
+  }
+
+  .img_logo_temp {
+    width: 300px;
+    align-items: left;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .login-row {
+    flex-direction: column;
+  }
+
+  .login-left,
+  .login-right {
+    width: 100%;
+    min-height: auto;
+  }
+
+  .entrar,
+  .criarconta {
+    padding: 60px 40px;
+  }
+
+  .criarconta {
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    align-items: center;
+    text-align: center;
+  }
+
+  .criarconta .textoleft {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+
+  .btnbranco {
+    width: 100%;
+    max-width: 350px;
+    margin-left: 0;
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .img_notificacao {
+    position: static;
+    width: 180px;
+    margin: 40px auto 0;
+    display: block;
+  }
+
+  .img_logo_temp {
+    width: 250px;
+    align-items: left;
+  }
+
+}
+
+
+@media (max-width: 768px) {
+
+  .entrar,
+  .criarconta {
+    padding: 40px 25px;
+  }
+
+  .btnbranco,
+  .btnentrar,
+  .btngoogle {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .img_logo_temp {
+    width: 220px;
+    align-items: left;
+  }
+
+  .img_notificacao {
+    width: 150px;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+}
+
+
+@media (max-width: 480px) {
+
+  .entrar,
+  .criarconta {
+    padding: 30px 20px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+
+  .input {
+    font-size: 14px;
+  }
+
+  .btnbranco,
+  .btnentrar,
+  .btngoogle {
+    height: 42px;
+    font-size: 14px;
+    justify-content: center;
+  }
+
+  .img_logo_temp {
+    width: 180px;
+    align-items: left;
+  }
+
+  .img_notificacao {
+    width: 120px;
+  }
+
+}
+
+@media (max-width: 360px) {
+
+  .entrar,
+  .criarconta {
+    padding: 20px 15px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+
+  .img_logo_temp {
+    width: 150px;
+    align-items: left;
+  }
+
+  .btnbranco,
+  .btnentrar,
+  .btngoogle {
+    font-size: 13px;
+    justify-content: center;
+  }
+
+}
+
+

@@ -197,7 +197,7 @@ function Home() {
         <p>Junte-se a milhares de empresas e usuários que confiam em nossa plataforma para garantir a autenticidade de seus documentos</p>
 
         <div className="btn-verfi1doc">
-          <Link to="/">Verificar meu primeiro documento</Link>
+          <Link to= "/analise">Verificar meu primeiro documento</Link>
           <FaArrowRight />
         </div>
 
