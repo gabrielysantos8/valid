@@ -51,7 +51,7 @@ function Login() {
 return (
   <div className="login-container">
 
-    <div className="login-row">
+    <div className="row-login">
 
       {/* Lado esquerdo */}
       <div className="login-left entrar divbranca">
@@ -100,11 +100,11 @@ return (
           </div>
 
           <div>
-            <Link to="/home" className="btnentrar">
+            <Link to="/" className="btnentrar">
               Entrar
             </Link>
 
-            <Link to="/home" className="btngoogle">
+            <Link to="/" className="btngoogle">
               Entrar com o Google
               <FcGoogle size={20} color="#00A279"  />
             </Link>
@@ -127,7 +127,9 @@ return (
           Criar conta
         </Link>
 
-        <img src={perfil_not} alt="notificacao" className="img_logo_temp" />
+        <div >
+          <img src={perfil_not} alt="notificacao" className="img_logo_temp" />
+        </div>
 
       </div>
 

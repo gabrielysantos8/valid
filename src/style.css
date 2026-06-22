@@ -2380,7 +2380,7 @@
   margin: 0;
 }
 
-.row {
+.row-login{
   display: flex;
   min-height: 100vh;
 }
@@ -2602,7 +2602,7 @@ label {
 
 @media (max-width: 900px) {
 
-  .login-row {
+  .row-login {
     flex-direction: column;
   }
 

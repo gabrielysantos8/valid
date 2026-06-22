@@ -15,14 +15,13 @@ import CriarConta from "./CriarConta";
 import EsqueceuSenha from "./EsqueceuSenha";
 import EsqueceuSenhaCodigo from "./EsqueceuSenhaCodigo";
 import NovaSenha from "./NovaSenha";
-import HomeAntesLogin from "./HomeAntesLogin";
+
 
 function App() {
   return(
     <BrowserRouter>
       <Routes>
-        <Route path="/home" element={<Home />} />
-        <Route path="/" element={<HomeAntesLogin />} />
+        <Route path="/" element={<Home />} />
         <Route path="/artigos" element={<Artigos />} />
         <Route path="/artigosConteudo" element={<ArtigosConteudo />} />
         <Route path="/sobre" element={<Sobre />} />

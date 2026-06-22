@@ -51,7 +51,7 @@ function EsqueceuSenha() {
 return (
   <div className="login-container">
 
-    <div className="login-row">
+    <div className="row-login">
 
       {/* Lado esquerdo */}
       <div className="login-left entrar divbranca">

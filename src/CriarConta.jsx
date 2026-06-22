@@ -15,7 +15,7 @@ function CriarConta() {
   return (
     <div className="login-container">
 
-      <div className="login-row">
+      <div className="row-login">
 
         {/* ESQUERDA */}
         <div className="login-left entrar divbranca">

@@ -5,9 +5,10 @@ import "./style.css";
 import tcc from "./assets/img/tcc.png";
 import livro_artigos from "./assets/img/livro_artigos.svg";
 import perfil_not from "./assets/img/perfil_not.svg";
-import { FiEdit2, FiLock, FiFileText, FiClock, FiShield, FiUser, FiStar,  FiBell  } from "react-icons/fi";
+import { FiEdit2, FiLock, FiFileText, FiClock, FiUser, FiStar,  FiBell  } from "react-icons/fi";
 import BackToTop from "./components/BackToTop";
 import { Link } from "react-router-dom";
+import { MdOutlineSecurity } from "react-icons/md";
 
 function Perfil() {
 
@@ -207,7 +208,7 @@ function Perfil() {
           <div className="card_stat">
             <div className="card_stat_topo">
               <div className="card_stat_icone">
-                <FiShield size={22} color="#fff" />
+                <MdOutlineSecurity size={22} color="#fff" />
               </div>
               <div>
                 {/* virá da API: stats.taxa */}
@@ -265,7 +266,8 @@ function Perfil() {
                <img src={livro_artigos} alt="livro_artigos" className="img_info" />    
 
               <Link to="/editarPerfil" className="btn_perfil_info" onClick={handleEditarPerfil}>
-                  <FiEdit2 size={20} />
+                  
+                  <MdOutlineSecurity size={20} />
                   Editar Informações
               </Link>
             </div>
@@ -277,7 +279,7 @@ function Perfil() {
           <div className="card_dados card_seguranca">
               <div className="card_dados_topo">
                 <div className="card_dados_icone card_dados_icone_cheio"> 
-                  <FiShield size={20} color="#00A279" /> 
+                  <MdOutlineSecurity size={20} color="#00A279" /> 
                 </div>
                 <h2>Segurança</h2>
               </div>
@@ -346,7 +348,6 @@ function Perfil() {
             </label>   
           </div>
           
-          <img src={perfil_not} alt="livro_artigos" className="img_notificacao " />
         </div>
       </div>
     </section>
