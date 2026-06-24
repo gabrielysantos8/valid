@@ -68,7 +68,7 @@ function Footer() {
                             <input type="text" name="" id="" placeholder="Nome Completo"/>
                         </div>
 
-                        <div class="input-group">
+                        <div className="input-group">
                             <div className="icons-form"><MdAlternateEmail /></div>
                             <input type="email" name="" id="" placeholder="Email" />
                         </div>

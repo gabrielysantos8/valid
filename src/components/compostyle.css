@@ -18,9 +18,12 @@ header {
     align-items: center;
 }
 
-header h1 {
-    color: white;
-    font-weight: 700;
+.icone-header{
+    color: #ffffff;
+    font-size: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 nav ul {

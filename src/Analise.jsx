@@ -15,7 +15,7 @@ function Analise() {
     const [preview, setPreview] = useState(null);
     const [dragAtivo, setDragAtivo] = useState(false);
 
-    const [resultado, setResultado] = useState("suspeito"); // useState vai mudar de acordo com o resultado q a api enviar
+    const [resultado, setResultado] = useState(null); // useState vai mudar de acordo com o resultado q a api enviar
 
     const handleArquivo = (e) => {
         const file = e.target.files[0];
@@ -32,6 +32,7 @@ function Analise() {
 
         setTimeout(() => {
             setEtapa("resultado");
+            setResultado("suspeito"); // teste
         }, 2000);
     };
 

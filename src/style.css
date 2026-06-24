@@ -763,6 +763,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 200px;
 }
 
 .div-foto h2{
@@ -771,9 +772,9 @@
 }
 
 .img-foto-desen{
-    background-color: #D4EDEA;
-    width: 200px;
-    height: 300px;
+    width: 100%;
+    aspect-ratio: 3 / 4;
+    object-fit: cover;
     border-radius: 20px;
 }
 
@@ -873,6 +874,23 @@
 
 .btn_perfil:hover {
   background: rgba(255, 255, 255, 0.15); 
+}
+
+.card_dados_icone{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* retira o fundo colorido que o chome deixa quando preenche automaticamente */
+.input-group input:-webkit-autofill,
+.input-group input:-webkit-autofill:hover,
+.input-group input:-webkit-autofill:focus,
+.input-group textarea:-webkit-autofill {
+    -webkit-text-fill-color: #ffffff !important;
+    -webkit-box-shadow: 0 0 0px 1000px #00A279 inset !important;
+    box-shadow: 0 0 0px 1000px #00A279 inset !important;
+    transition: background-color 5000s ease-in-out 0s;
 }
 
 @media (max-width: 600px) {

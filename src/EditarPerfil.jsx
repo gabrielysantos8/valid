@@ -6,6 +6,7 @@ import tcc from "./assets/img/tcc.png";
 import { FiEdit2, FiShield, FiUser } from "react-icons/fi";
 import BackToTop from "./components/BackToTop";
 import { Link, useNavigate } from "react-router-dom";
+import { MdOutlineSecurity } from "react-icons/md";
 
 function EditarPerfil() {
 
@@ -111,7 +112,7 @@ function EditarPerfil() {
 
               <div className="card_dados_topo">
                 <div className="card_dados_icone">
-                  <FiShield size={20} color="#00A279" />
+                  <MdOutlineSecurity size={20} color="#00A279" />
                 </div>
                 <h2>Segurança</h2>
               </div>

@@ -6,13 +6,15 @@ import "./compostyle.css";
 import { FaBars } from "react-icons/fa";
 import { useState } from "react";
 
+import { HiOutlineDocumentSearch } from "react-icons/hi";
+
 function Header() {
     const [menuAberto, setMenuAberto] = useState(false);
 
     return(
         <header>
-            <div>
-                <h1>Logo</h1>
+            <div className="icone-header">
+                < HiOutlineDocumentSearch />
             </div>
             
             <nav className={menuAberto ? "ativo" : ""}>

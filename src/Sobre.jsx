@@ -6,6 +6,12 @@ import docsobre1 from "./assets/img/doc-sobre-1.png";
 import docsobre2 from "./assets/img/doc-sobre-2.png";
 import BackToTop from "./components/BackToTop";
 
+import fotoadriano from "./assets/img/fotoadriano.jpeg";
+import fotoana from "./assets/img/fotoana.jpeg";
+import fotobea from "./assets/img/fotobea.jpeg";
+import fotobya from "./assets/img/fotobya.jpeg";
+import fotogaby from "./assets/img/fotogaby.jpeg";
+
 function Sobre() {
     return (
         <div className="sobre">
@@ -58,33 +64,43 @@ function Sobre() {
 
                     <div className="row divfotos">
                         <div className="div-foto">
-                            <div className="img-foto-desen"></div>
+                            <div>
+                                <img src={fotoadriano} alt="" className="img-foto-desen"/>
+                            </div>
                             <h2>Adriano</h2>
-                            <p>17 anos</p>
+                            <p>Estudante</p>
                         </div>
 
                         <div className="div-foto">
-                            <div className="img-foto-desen"></div>
+                            <div>
+                                <img src={fotoana} alt="" className="img-foto-desen"/>
+                            </div>
                             <h2>Ana Clara</h2>
-                            <p>17 anos</p>
+                            <p>Estudante</p>
                         </div>
 
                         <div className="div-foto">
-                            <div className="img-foto-desen"></div>
+                            <div>
+                                <img src={fotobea} alt="" className="img-foto-desen"/>
+                            </div>
                             <h2>Beatriz</h2>
-                            <p>17 anos</p>
+                            <p>Estudante</p>
                         </div>
 
                         <div className="div-foto">
-                            <div className="img-foto-desen"></div>
+                            <div>
+                                <img src={fotobya} alt="" className="img-foto-desen"/>
+                            </div>
                             <h2>Byanca</h2>
-                            <p>17 anos</p>
+                            <p>Estudante</p>
                         </div>
 
                         <div className="div-foto">
-                            <div className="img-foto-desen"></div>
+                            <div>
+                                <img src={fotogaby} alt="" className="img-foto-desen"/>
+                            </div>
                             <h2>Gabriely</h2>
-                            <p>17 anos</p>
+                            <p>Estudante</p>
                         </div>
                     </div>
 
